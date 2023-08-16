@@ -1,0 +1,20 @@
+package com.microservices.limitservice.limitservice.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.microservices.limitservice.limitservice.dao.LimitDao;
+
+@RestController("/api")
+public class LimitServiceController {
+	
+	@GetMapping
+	public String test() {
+		return "karthik";
+	}
+	
+	@GetMapping("/get-limit-service")
+	public LimitDao getLimitService() {
+		return new LimitDao(1,1000);
+	}
+}

@@ -1,0 +1,5 @@
+package com.microservices.limitservice.limitservice.configuration;
+
+public class Configuration {
+
+}

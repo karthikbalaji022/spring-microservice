@@ -1,0 +1,21 @@
+package com.microservices.limitservice.limitservice.dao;
+
+import org.springframework.stereotype.Service;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@Service
+public class LimitDao {
+	private int min;
+	private int max;
+
+	LimitDao(int min, int max) {
+		this.min = min;
+		this.max = max;
+	}
+}
